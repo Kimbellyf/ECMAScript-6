@@ -1,5 +1,5 @@
 <p>Os operados de declaração de atributos antigamente em Javascript eram declarados somente como "Var" mas
-a utilização dessa declaração para um atributo pode gerar algum tipo de confusão já que ela é uma variável global, não conseguindo muitas vezes separar o que foi feito em um escopo de função e de bloco (se caso tivesse o mesmo nome de atributo).</p>
+a utilização dessa declaração para um atributo pode gerar algum tipo de confusão já que ela é uma variável global, não conseguindo muitas vezes separar o que foi feito em um escopo de função e de bloco (se caso tiver o mesmo nome de atributo).</p>
 
 <img src="https://github.com/Kimbellyf/ECMAScript-6/blob/main/var-let-const/escopoglobalelocal.JPG">
 
@@ -20,9 +20,9 @@ a utilização dessa declaração para um atributo pode gerar algum tipo de conf
 </p>
 
 
-<h5>Exemplos:</h5>
+<h3>Exemplos:</h3>
 <br>
-Exemplo usando declaração <strong>Let</strong>:
+<h5>Exemplo usando declaração <strong>Let</strong>:</h5>
 <br>
 
 <pre>
@@ -31,17 +31,18 @@ let serie = 'The Boys'
     let serie = 'Csi'
     console.log('dentro do bloco: ' + serie)
 }
+<br><br>
 console.log('fora do bloco' + serie)
 </pre>
-
+<br>
 retorno dentro do bloco:
 Csi
-
+<br>
 retorno fora do bloco:
 The Boys
+<br><br>
 
-
-Exemplo usando <strong>Var</strong>:
+<h5>Exemplo usando <strong>Var</strong>:</h5>
 
 <pre>
 var serie = 'The Boys'
@@ -54,16 +55,18 @@ var serie = 'The Boys'
  console.log('fora do bloco pt 2': ')
 </pre>
 
-
+<br><br>
 retorno dentro do bloco pt 1 =
 The Boys
+<br>
 retorno dentro do bloco pt 2 =
 Csi
+<br>
 retorno fora do bloco =
 The Boys
-
-
-Exemplo usando <strong>Const</strong>:
+<br>
+<br>
+<h5>Exemplo usando <strong>Const</strong>:</h5>
 
 <pre>
 const serie = 'The Boys'
@@ -76,10 +79,13 @@ const serie = 'The Boys'
  console.log('fora do bloco pt 2': ')
 </pre>
 
+<br><br>
 retorno dentro do bloco pt 1 =
 The Boys
+<br>
 retorno dentro do bloco pt 2 =
 The Boys
+<br>
 retorno fora do bloco =
 The Boys
 
