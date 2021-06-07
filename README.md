@@ -20,8 +20,8 @@ Feature de 2015 ela trouxe:
      <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/promises"><li>Promises</li></a>
      <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/symbol"><li>Symbol</li></a>
      <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/default-parameters"><li>Default Parameters</li></a>
-     <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/rest-parameters"><li>Function Rest Parameters</li></a>
-     <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/spread-parameters"><li>Function Spread Parameters</li></a>
+     <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/rest-parameters-e-spread-sintax"><li>Function Rest Parameters</li></a>
+     <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/rest-parameters-e-spread-sintax"><li>Function Spread Parameters</li></a>
      <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/array.find()"><li>Array.find()</li></a>
      <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/array.findindex()"><li>Array.findIndex()</li></a>
      <a href="https://github.com/Kimbellyf/ECMAScript-6/tree/main/feature-metodos-math"><li>Novos métodos Math</li></a>
