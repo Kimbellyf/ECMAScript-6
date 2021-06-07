@@ -16,7 +16,7 @@ a utilização dessa declaração para um atributo pode gerar algum tipo de conf
 </ul>
 
 <p>
-<strong>Const</strong> é um operador de declaração utilizado para impedir que um atributo seja modificado em outras situações dentro do código.
+<strong>Const</strong> é um operador de declaração utilizado para impedir que um atributo seja modificado em outras situações dentro do código. Também respeita o escopo em que foi declarado.
 </p>
 
 
@@ -72,21 +72,27 @@ The Boys
 const serie = 'The Boys'
 {
     console.log('dentro do bloco pt 1': ' + serie)
-    const serie = 'Csi' // na vdd eu n posso declarar como const um atributo que ja foi declarado, isso vai gerar um erro
-    serie = 'Csi' //esse também vai gerar erro porque eu não posso alterar uma const
+    const serie = 'Csi' 
+    serie = 'Dark' //esse vai gerar erro porque eu não posso alterar uma const. Ela ja foi declarada dentro do escopo de bloco como 'Csi'
     console.log('dentro do bloco pt 2': ' + serie)
 }
+ console.log('fora do bloco pt 1': ')
+ const serie = 'Stranger Things'; //vai dar erro pois a variável ja foi declarada no escopo global
  console.log('fora do bloco pt 2': ')
+ serie = 'Stranger Things'; //vai dar erro pois a variável ja foi definida como 'The Boys' no escopo global e como const não pode mudar...
 </pre>
 
 <br><br>
 retorno dentro do bloco pt 1 =
-The Boys
+error.... (ela não foi inicializada então dará erro)
 <br>
 retorno dentro do bloco pt 2 =
+Csi
+<br>
+retorno fora do bloco pt 1 =
 The Boys
 <br>
-retorno fora do bloco =
+retorno fora do bloco pt 2 =
 The Boys
-
+<br>
 
